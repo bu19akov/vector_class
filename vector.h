@@ -23,7 +23,6 @@ private:
 	size_t max_sz; //maximale Anzahl an Elementen
 	static constexpr size_t min_sz{5}; //Mindestgroesse
 	value_type* values; //Zeiger aud ein Feld
-	//friend ostream& operator<<(ostream& o, const Vector& v);
 public:
 	Vector() : Vector(min_sz){ //Defaultkonstruktor
 	}
@@ -96,8 +95,6 @@ public:
 		}
 		return o << ']';
 	}
-	
-	//mein Code
 	
 	size_t size() const {
 		return sz;
